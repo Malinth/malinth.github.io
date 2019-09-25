@@ -8,8 +8,9 @@ body {
 
 hr {
   max-width: 90px;
-  border-width: 1px;
-  border-color: lightgrey; }
+  /* border-width: 1px;
+  border-color: lightgrey; */
+  border: 1px lightgrey dashed }
 
 hr.light {
   border-color: white; }
@@ -28,7 +29,10 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; }
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 100;
+  text-transform: uppercase;
+ }
 
   h2.footer-brand {
     text-transform: uppercase;
@@ -45,7 +49,8 @@ p {
   margin-bottom: 20px; }
 
 .bg-primary {
-  background-color: #a0abaf !important; }
+  background-color: #a0abaf !important; 
+  padding: 100px 0; }
 
 .bg-dark {
   color: white;
@@ -55,10 +60,14 @@ p {
   color: rgba(255, 255, 255, 0.7); }
 
 section {
-  padding: 100px 0; }
+  padding: 50px 0; }
 
 .section-heading {
-  margin-top: 0; }
+  margin-top: 0; 
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 2.5rem;
+}
 
 ::-moz-selection {
   color: white;
@@ -159,7 +168,8 @@ header.masthead {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed; }
   header.masthead .header-content {
     position: relative;
     width: 100%;
@@ -214,7 +224,7 @@ header.masthead {
   position: relative;
   display: block;
   max-width: 650px;
-  border: 5px solid #ffffff;
+  border: 10px solid #ffffff;
 
   margin: 0 auto; }
   .portfolio-box .portfolio-box-caption {
@@ -362,4 +372,19 @@ header.masthead {
 .fa-3x {
 color:#a0abaf!important;
 font-size: 2em!important;
+}
+
+.table{
+  border-color: #ffffff!important;
+}
+.thead{
+  border-top: 0px solid!important;
+}
+
+.borderless td, .borderless th {
+  border: none;
+}
+
+#price-table{
+  margin: 0rem 2rem;
 }
