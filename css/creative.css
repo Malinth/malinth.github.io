@@ -35,8 +35,10 @@ h6 {
  }
 
  h4 {
-  color: #000;
+  color: #a0abaf;
   letter-spacing: 2px;
+  font-size:1.3rem;
+  font-weight:200;
  }
 
   h5 {
@@ -90,7 +92,7 @@ section {
 .section-heading {
   margin-bottom: 2rem; 
   text-transform: uppercase;
-  /* font-weight: 100; */
+  font-weight: 100;
   font-size: 2.5rem;
 }
 
@@ -203,10 +205,11 @@ header.masthead {
   }
   header.masthead .header-content .header-content-inner h2{
     font-size: 30px!important;
-    font-weight: 700;
+    font-weight: 100;
     margin-top: 0;
     margin-bottom: 0;
     text-transform: uppercase; 
+    letter-spacing: 2px;
   }
   @supports 
   ((-webkit-text-stroke-color: #fff)
@@ -223,7 +226,6 @@ header.masthead {
       margin-top: 0;
       margin-bottom: 0;
       text-transform: uppercase; 
-
         -moz-text-fill-color: transparent;
         -webkit-text-fill-color: transparent;
         -moz-text-stroke-color: #fff;
@@ -239,6 +241,12 @@ header.masthead {
       font-weight: 300;
       margin-bottom: 50px;
       color: rgba(255, 255, 255, 0.7); }
+      header.masthead .header-content .header-content-inner a {
+        font-size: 2rem;
+      }
+      header.masthead .header-content .header-content-inner a:hover {
+       color: #fff;
+      }
   @media (min-width: 768px) {
     header.masthead {
       height: 100%;
@@ -247,21 +255,20 @@ header.masthead {
         position: absolute;
         top: 35%;
         padding: 0 50px;
-        -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%); }
+        -webkit-transform: translateY(-60%);
+        -ms-transform: translateY(-60%);
+        transform: translateY(-60%); }
         header.masthead .header-content .header-content-inner {
           max-width: 1000px;
           margin-right: auto;
           margin-left: auto; }
           header.masthead .header-content .header-content-inner h1 {
-            font-size: 50px; }
+            font-size: 4.2rem }
           header.masthead .header-content .header-content-inner p {
             font-size: 18px;
             max-width: 55%;
             margin-right: auto;
             margin-left: auto; } }
-
             #services{
               margin: 3rem;
             }
@@ -280,8 +287,8 @@ header.masthead {
   display: block;
   max-width: 650px;
   border: 10px solid #ffffff;
-
   margin: 0 auto; }
+
   .portfolio-box .portfolio-box-caption {
     position: absolute;
     bottom: 0;
@@ -321,11 +328,6 @@ header.masthead {
       font-size: 16px; }
     .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
       font-size: 22px; } }
-
-.call-to-action {
-  padding: 50px 0; }
-  .call-to-action h2 {
-    margin: 0 auto 20px; }
 
 .text-primary {
   color: lightgrey !important; }
@@ -444,8 +446,4 @@ font-size: 2em!important;
   #prices{
     margin: 0rem 3rem;
   }
-}
-
-.marquee-text{
-  font-style: italic;
 }
